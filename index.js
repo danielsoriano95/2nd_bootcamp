@@ -8,10 +8,15 @@ app.use(bodyParser.urlencoded({extended:true}));
 
 // 2) Rutas
 app.get('/prueba', function(req, res){
-    res.send("Hola mundo");
+    res.sendFile(__dirname + "/index.html")
+    
 })
 
 //3) listen
 app.listen(4000, function(){
     console.log("servidor iniciado");
 })
+
+//git commit -m "texto"
+//git branch
+//git push origin main
